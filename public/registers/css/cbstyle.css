@@ -1,0 +1,108 @@
+.imageBox
+{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border:1px solid #aaa;
+    background: #fff;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    cursor:move;
+}
+
+.imageBox .thumbBox
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+    box-sizing: border-box;
+    border: 1px solid rgb(102, 102, 102);
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    background: none repeat scroll 0% 0% transparent;
+}
+
+.imageBox .spinner
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 400px;
+    background: rgba(0,0,0,0.7);
+}
+/*
+     FILE ARCHIVED ON 03:20:53 Jun 14, 2025 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:37:55 Jan 20, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.749
+  exclusion.robots: 0.07
+  exclusion.robots.policy: 0.056
+  esindex: 0.012
+  cdx.remote: 66.898
+  LoadShardBlock: 88.323 (3)
+  PetaboxLoader3.datanode: 136.145 (4)
+  load_resource: 176.109
+  PetaboxLoader3.resolve: 90.558
+*/
+/* Button color styles - added for local development */
+.clr-btn-green {
+    background-color: #4CAF50 !important;
+    background: linear-gradient(to bottom, #4CAF50, #388E3C) !important;
+    border: 1px solid #388E3C !important;
+    color: #ffffff !important;
+}
+
+.clr-btn-green:hover {
+    background: linear-gradient(to bottom, #388E3C, #2E7D32) !important;
+}
+
+.clr-btn-pink {
+    background-color: #E91E63 !important;
+    background: linear-gradient(to bottom, #E91E63, #C2185B) !important;
+    border: 1px solid #C2185B !important;
+    color: #ffffff !important;
+}
+
+.clr-btn-pink:hover {
+    background: linear-gradient(to bottom, #C2185B, #AD1457) !important;
+}
+
+.clr-btn-blue {
+    background-color: #2196F3 !important;
+    background: linear-gradient(to bottom, #2196F3, #1976D2) !important;
+    border: 1px solid #1976D2 !important;
+    color: #ffffff !important;
+}
+
+.clr-btn-red {
+    background-color: #F44336 !important;
+    background: linear-gradient(to bottom, #F44336, #D32F2F) !important;
+    border: 1px solid #D32F2F !important;
+    color: #ffffff !important;
+}
+
+.clr-white {
+    color: #ffffff !important;
+}
+
+/* Ensure buttons are visible and styled */
+.ui-btn.clr-btn-green,
+.ui-btn.clr-btn-pink,
+.ui-btn.clr-btn-blue,
+.ui-btn.clr-btn-red {
+    text-shadow: none !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+}
