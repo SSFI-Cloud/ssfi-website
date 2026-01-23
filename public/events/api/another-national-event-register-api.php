@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set("display_errors",1);
 
-include '../../admin/config/config.php';
+include '../../../admin/config/config.php';
 
 $skater_id = $_POST['skater_id']!="" ? $_POST['skater_id'] : 0;
 // $event_level_type_id = $_POST['event_level_type_id']!="" ? $_POST['event_level_type_id'] : 0;

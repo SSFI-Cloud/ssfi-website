@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include '../../admin/config/config.php';
+include '../../../admin/config/config.php';
 try{
 $mobile_no = $_POST['mobile_no'] ?? '';
 $email = $_POST['email'] ?? '';

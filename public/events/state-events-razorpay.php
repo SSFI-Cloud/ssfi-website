@@ -1,5 +1,5 @@
 <?php include "state_header.php";
-include '../admin/config/config.php';
+include '../../admin/config/config.php';
 
 $event_id= $_GET['event_id'] ?? 0;
 

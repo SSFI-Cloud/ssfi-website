@@ -1,6 +1,6 @@
 <?php
 // Include the database configuration file
-include '../../admin/config/config.php';
+include '../../../admin/config/config.php';
 
 // Check if the query parameter is set and not empty
 if (isset($_POST['query']) && !empty(trim($_POST['query']))) {

@@ -1,0 +1,91 @@
+/* Manually restored NativeDroid2 styles to fix broken layout */
+
+/* Card Styling */
+.nd2-card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin: 16px auto;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    /* Constrain width on desktop */
+}
+
+.box {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Form Elements */
+input,
+select,
+textarea,
+.ui-input-text,
+.ui-select {
+    width: 100% !important;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Fix for Select Dropdowns appearing weirdly */
+.ui-select .ui-btn {
+    width: 100%;
+    text-align: left;
+}
+
+/* Button Styling Alignment */
+.ui-btn {
+    margin: 5px 0;
+}
+
+/* Header/Back Button alignment */
+.col-xs-8.col-sm-8.col-md-8 {
+    text-align: right;
+    padding: 10px;
+}
+
+.inline-btn {
+    display: inline-block;
+    padding: 8px 16px !important;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Titles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    /* Fallback font */
+}
+
+.txt_title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Centering helper */
+center {
+    display: block;
+    text-align: center;
+}
+
+/* Fix main content background if needed */
+body {
+    background-color: #f9f9f9;
+}

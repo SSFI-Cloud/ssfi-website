@@ -1,5 +1,5 @@
 <?php
-include '../../admin/config/config.php';
+include '../../../admin/config/config.php';
 
 $age = $_POST['age'] ?? 0;
 $event_level_type_id = $_POST['event_level_type_id'] ?? 1;

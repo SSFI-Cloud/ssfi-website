@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set("display_errors",1);
 
-include '../../admin/config/config.php';
+include '../../../admin/config/config.php';
 
 $Razorpay_api_secret='bC7hjMrTn61YSi7BzzaaJxFd';
 $Razorpay_api_key='rzp_live_RIb0oARWG5CcDw';

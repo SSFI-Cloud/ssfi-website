@@ -1,3 +1,4 @@
+<?php if (session_status() === PHP_SESSION_NONE) { session_start(); } ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         
@@ -10,10 +11,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1.0, user-scalable=no" />
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
-        <link rel="stylesheet" href="https://indiaskate.com/skaterbase25/vendor/waves/waves.min.css" />
-        <link rel="stylesheet" href="https://indiaskate.com/skaterbase25/css/nativedroid2.css" />
-        <link rel="stylesheet" href="https://indiaskate.com/skaterbase25/css/cbstyle.css" />
-        <link rel="stylesheet" href="https://indiaskate.com/skaterbase25/vendor/wow/animate.css" />
+        <link rel="stylesheet" href="../vendor/waves/waves.min.css" />
+        <link rel="stylesheet" href="../css/nativedroid2.css" />
+        <link rel="stylesheet" href="../css/cbstyle.css" />
+        <link rel="stylesheet" href="../vendor/wow/animate.css" />
         <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
         <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
         <!-- jQuery -->

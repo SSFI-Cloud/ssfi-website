@@ -1,5 +1,5 @@
 <?php include "header.php";
-include '../admin/config/config.php';
+include '../../admin/config/config.php';
 
 $event_id= 14;
 
@@ -72,7 +72,7 @@ if(1){ ?>
                                         <div id="member_suggestion" style="position: relative;"></div>
                                     </div>
                                     <div>
-                                        <button type="submit" id="mobBtn" style="color:white;" class="ui-btn ui-corner-all ui-shadow clr-btn-green ui-btn-icon-left ui-icon-pen clr-white">Continue >>></button>
+                                        <button type="submit" id="mobBtn" style="color:white; background-color:#28a745; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;" class="ui-btn ui-corner-all ui-shadow clr-btn-green ui-btn-icon-left ui-icon-pen clr-white">Continue >>></button>
                                     </div>
               
                                     
@@ -117,7 +117,7 @@ if(1){ ?>
                                     </div>
                                     <div class="box" style="text-align: end;">
                                         <a style="color:white;" class="ui-btn ui-btn-inline ui-corner-all ui-shadow clr-btn-pink clr-white"> << Go Back </a>
-                                        <button id='submitbtn' type="submit" class="ui-btn ui-btn-inline ui-corner-all ui-shadow clr-btn-green clr-white"> Verifiy CAPTCHA >></button>
+                                        <button id='submitbtn' type="submit" class="ui-btn ui-btn-inline ui-corner-all ui-shadow clr-btn-green clr-white" style="color:white; background-color:#28a745; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;"> Verifiy CAPTCHA >></button>
                                     </div>
                                     
                                 </div>
@@ -236,7 +236,7 @@ if(1){ ?>
 
                                     <br>
                                     <div>
-                                        <button style="color:white;" class="ui-btn ui-corner-all ui-shadow clr-btn-green ui-btn-icon-left ui-icon-pen clr-white btn-submit">
+                                        <button style="color:white; background-color:#28a745; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;" class="ui-btn ui-corner-all ui-shadow clr-btn-green ui-btn-icon-left ui-icon-pen clr-white btn-submit">
                                            Submit>>>
                                         </button>
                                     </div>
@@ -308,7 +308,7 @@ if(1){ ?>
                                   </div>
                                   <br>
                                   <div>
-                                    <button id="go_home" style="color:white;" class="ui-btn ui-corner-all ui-shadow clr-btn-green ui-btn-icon-left ui-icon-pen clr-white">
+                                    <button id="go_home" style="color:white; background-color:#28a745; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;" class="ui-btn ui-corner-all ui-shadow clr-btn-green ui-btn-icon-left ui-icon-pen clr-white">
                                       <<< Back To register Page </button>
                                   </div>
                                 </div>
@@ -419,7 +419,7 @@ function pay(skater_id,event_id) {
             /*let email = $('#verify_email_id').val().trim();
             let mobile_no = $('#verify_mobile_no').val().trim();*/    
             let otp = $('#otp').val().trim();
-            let event_id= <?php if(isset($_GET["event_id"]) && $_GET["event_id"]!= ""){echo $_GET["event_id"];}else{echo 0;} ?>;
+            let event_id= <?php if(isset($_GET["event_id"]) && $_GET["event_id"]!= ""){echo $_GET["event_id"];}else{echo $event_id;} ?>;
             
             // Validate OTP via AJAX
             $.ajax({
@@ -561,15 +561,9 @@ function pay(skater_id,event_id) {
                 success: function(response) {
                     //console.log(response)
                     let res = response;
-                    if(res.status === "success") {
-                        /*$("#loader").hide();
-                        openPaymentGateWay(response.order_id,response.amount,response.razorpay_api_key);
-                        $('#event_register').show();
-                         alert(res.message);
-                    }else if(res.status === "pay_completed") {*/
+                    if(res.status === "success" || res.status === "pay_completed") {
                         $("#loader").hide();
                         alert(res.message);
-                        //alert(data.message);
                         $('.txt_title').text(res.message);
                         $('.confirm_name').text(res.data.full_name);
                         $('.confirm_age').text(res.data.age);

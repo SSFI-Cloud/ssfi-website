@@ -1,5 +1,5 @@
 <?php
-include '../../admin/config/config.php';
+include '../../../admin/config/config.php';
 $state_id= $_GET['state_id'] ?? 0;
 // $district_id=$_GET['district_id'] ?? 0;
 $event_type_id=$_GET['event_type_id'] ?? 2;

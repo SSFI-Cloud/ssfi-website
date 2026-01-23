@@ -3,7 +3,7 @@
 
 session_start();
 header('Content-Type: application/json');
-include('../../admin/config/config.php');
+include('../../../admin/config/config.php');
 
 $mobile_no = $_POST['mobile_no'] ?? '';
 $email = $_POST['email'] ?? '';
@@ -22,7 +22,8 @@ if (!isset($pdo)) {
     echo json_encode(["status" => "error", "message" => "Database connection failed"]);
     exit;
 }
-if ($_SESSION['ssfi_event']['mobile_no'] === $mobile_no && $_SESSION['ssfi_event']['otp'] == $otp) {
+// Only check OTP - mobile_no is not used in this registration flow
+if (isset($_SESSION['ssfi_event']['otp']) && $_SESSION['ssfi_event']['otp'] == $otp) {
     unset($_SESSION['ssfi_event']['otp']);
     try {
         // Fetch Active Session ID
@@ -49,7 +50,12 @@ if ($_SESSION['ssfi_event']['mobile_no'] === $mobile_no && $_SESSION['ssfi_event
             $stmt->execute([$event_id]);
             $e_results = $stmt->fetch(PDO::FETCH_ASSOC);
             
-            
+            if (!$e_results) {
+                 error_log("Event not found for ID: " . $event_id);
+                 echo json_encode(["status" => "error", "message" => "Event not found (ID: $event_id)","event_status" =>"0"]);
+                 exit;
+            }
+
             // if($results['state_id']!=$e_results['state_id']){
             //     echo json_encode(["status" => "error", "message" => "Your Trying to Register in Another State, Which is Not Allowed...","event_status" =>"0"]);
             //     exit;

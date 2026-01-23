@@ -3,7 +3,7 @@
 
 session_start();
 header('Content-Type: application/json');
-include('../../admin/config/config.php');
+include('../../../admin/config/config.php');
 
 $mobile_no = $_POST['mobile_no'] ?? '';
 $email = $_POST['email'] ?? '';

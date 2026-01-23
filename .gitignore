@@ -22,14 +22,6 @@ Thumbs.db
 error_log
 error_log.txt
 
-# Uploads (user generated content)
-admin/uploads/*
-!admin/uploads/.gitkeep
-public/registers/uploads/*
-!public/registers/uploads/.gitkeep
-public/registers/pdf/*
-!public/registers/pdf/.gitkeep
-
 # Sensitive config (uncomment if pushing to public repo)
 # admin/config/db.php
 # admin/config/config.php

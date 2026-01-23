@@ -1,5 +1,11 @@
 <?php
-include ("../admin/config/config.php");
+error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE);
+ini_set('display_errors', 0);
+include ("../../admin/config/config.php");
+$root_path = realpath(__DIR__ . '/../../');
+$admin_path = $root_path . '/admin/';
+$public_path = $root_path . '/public/';
+$logo_path = $public_path . 'registers/image/logo.jpg';
 
 
 // print_r($id);
@@ -62,7 +68,7 @@ $htmldata='
                         <tbody>
                             <tr>
                             
-                           <td><img src="https://ssfibharatskate.com/registers/image/logo.jpg" alt="SSFI" style="width:98%;"></td>
+                           <td><img src="'.$logo_path.'" alt="SSFI" style="width:98%;"></td>
                             
                                     
                             </tr>
@@ -119,7 +125,7 @@ $htmldata='
             <table style="width:100%;font-size:13px;">
                 <tr>
                     <td style="width:25%;" rowspan="5">
-                        <img src="https://ssfibharatskate.com/admin/'.$result['profile_photo'].'" style="width:70px;">
+                        <img src="'.$admin_path.$result['profile_photo'].'" style="width:70px;">
                     </td>
                     <td style="width:25%;">Skater ID</td> <td >: '.$result['membership_id'].'</td>
                 </tr>
