@@ -767,3 +767,92 @@ a:hover {
     margin: 40px auto 20px !important;
     display: block !important;
 }
+/* ===============================================
+   FINAL MEGA MENU & BUTTON FIXES
+   =============================================== */
+
+/* Mega Menu Grid Layout */
+#mainmenu li .mega-menu-area {
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 15px !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    padding: 30px !important;
+    box-sizing: border-box !important;
+    right: auto !important;
+    background: white !important;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1) !important;
+    border-top: 4px solid var(--primary-navy) !important;
+}
+
+#mainmenu li .mega-menu-area > li {
+    width: 100% !important;
+    border: none !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+
+#mainmenu li .mega-menu-area > li a {
+    padding: 8px 10px !important;
+    font-size: 13px !important;
+    color: #555 !important;
+    width: 100% !important;
+    border-bottom: 1px solid #f0f0f0 !important;
+    text-align: left !important;
+    background: transparent !important;
+}
+
+#mainmenu li .mega-menu-area > li a:hover {
+    color: white !important;
+    background-color: var(--primary-navy) !important;
+    padding-left: 15px !important;
+    text-decoration: none !important;
+}
+
+/* Fix Club Registration Button Visibility */
+.service-card .btn-premium {
+    background-color: var(--primary-navy) !important;
+    color: white !important;
+    border: 2px solid var(--primary-navy) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: inline-block !important;
+    box-shadow: 0 5px 15px rgba(0,31,63,0.3) !important;
+}
+
+.service-card .btn-premium:hover {
+    background-color: var(--accent-gold) !important;
+    border-color: var(--accent-gold) !important;
+    color: var(--primary-navy) !important;
+}
+
+/* Small Button Variant */
+.btn-premium.small {
+    padding: 10px 25px !important;
+    font-size: 0.85rem !important;
+    min-width: 140px !important;
+}
+
+/* Mobile Adjustments for Mega Menu */
+@media (max-width: 991px) {
+    #mainmenu li .mega-menu-area {
+        grid-template-columns: 1fr !important;
+        position: relative !important;
+        left: 0 !important;
+        transform: none !important;
+        width: 100% !important;
+        box-shadow: none !important;
+        border-top: none !important;
+        padding: 10px !important;
+    }
+    
+    #mainmenu li .mega-menu-area > li a {
+        background: #f9f9f9 !important;
+        margin-bottom: 2px !important;
+    }
+}
