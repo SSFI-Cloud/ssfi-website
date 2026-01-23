@@ -55,95 +55,6 @@
 
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabbed Content with Table</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        /* Tab Navigation */
-        .tab-container {
-            display: flex;
-            justify-content: center;
-            /*background: #f1f1f1;*/
-            padding: 10px;
-        }
-
-        .tab {
-            padding: 12px 20px;
-            cursor: pointer;
-            background: #ddd;
-            border: none;
-            margin: 0 5px;
-            font-size: 16px;
-            border-radius: 29px;
-        }
-
-        .tab:hover {
-            background: #bbb;
-        }
-
-        .tab.active {
-            background: #333;
-            color: white;
-            border-radius: 26px;
-        }
-
-        /* Tab Content */
-        .tab-content {
-            display: none;
-            padding: 20px;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-
-        /* Table Styling */
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
-        }
-
-        th {
-            background: #333;
-            color: white;
-        }
-
-        /* Contact Section */
-        .contact-box {
-            background: orange;
-            padding: 20px;
-            color: white;
-            margin-top: 20px;
-        }
-
-        .contact-box div {
-            margin: 10px 0;
-        }
-
-        .icon {
-            font-weight: bold;
-        }
-
-    </style>
-</head>
-<body>
 
 <br>
 
@@ -514,7 +425,5 @@
         }
     </script>
 
-</body>
-</html>
 
             <?php include ('footer.php')?>

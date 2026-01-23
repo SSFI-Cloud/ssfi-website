@@ -178,4 +178,4 @@ function GetEventList(){
 <h3 style="color:red;text-align:center;margin-top:5%">Coming Soon</h3>
 
 <?php } ?>
-<?php include('footer.php') ?>
+<?php include('../footer.php') ?>
