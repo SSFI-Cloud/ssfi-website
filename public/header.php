@@ -312,10 +312,9 @@
                                   <li>
                                    <a class="menu-item" href="#">REGISTRATION</a>
                                    <ul>
-                                       <li><a href="https://ssfibharatskate.com/registers/s-secretary.php">State Association Registration</a></li>
-                                        <li><a href="https://ssfibharatskate.com/registers/d-secretary.php">District Association Registration</a></li>                     
-                                        <!--<li><a href="https://ssfibharatskate.com/registers/closed_page.php">Club Registration</a></li>-->
-                                        <li><a href="https://ssfibharatskate.com/registers/club-2526.php">Club Registration</a></li>
+                                       <li><a href="registers/s-secretary.php">State Association Registration</a></li>
+                                        <li><a href="registers/d-secretary.php">District Association Registration</a></li>                     
+                                        <li><a href="registers/club-2526.php">Club Registration</a></li>
                                           <li><a href="registers/skater-2526.php">Skater Registration</a></li>
                                     </ul>
                                    
