@@ -161,14 +161,14 @@
             </div>
         </div>
         
-        <div style="background-color:#f9f2fa !important; padding: 10px 0;" id="top_header">
+        <div style="background-color:#f9f2fa !important; padding: 5px 0;" id="top_header">
             <div class="container">
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
                     <div class="mb-2 mb-md-0">
-                        <a href="mailto:info@ssfibharatskate.com" style="color:var(--secondary-color) !important; text-decoration: none; font-weight: bold;">info@ssfibharatskate.com</a>
+                        <a href="mailto:info@ssfibharatskate.com" style="color:var(--secondary-color) !important; text-decoration: none; font-weight: bold; font-size: 13px;">info@ssfibharatskate.com</a>
                     </div>
                     <div>
-                        <ul class="d-flex flex-wrap justify-content-center justify-content-md-end gap-2 list-unstyled m-0 p-0" style="color:var(--secondary-color) !important; font-size:14px;">
+                        <ul class="d-flex flex-wrap justify-content-center justify-content-md-end gap-2 list-unstyled m-0 p-0" style="color:var(--secondary-color) !important; font-size:13px;">
                             <li class="px-2"><i class="icofont-phone"></i> <a href="tel:+919600635806" style="color:var(--secondary-color) !important;">+919600635806</a></li>
                             <li class="px-2" ><i class="icofont-youtube-play"></i><a href="https://www.youtube.com/@SSFIXBharatSkate" style="color:var(--secondary-color) !important;">YouTube</a></li>
                             <!--<li class="px-2"><i class="icofont-facebook"></i> Facebook</li>-->
@@ -179,37 +179,15 @@
             </div>
         </div>
         
-        <div class="container" id="middel_header" style="background-color:white">
+        <div class="container" id="middel_header" style="background-color:white; padding: 10px 0;">
             <div class="d-flex flex-column flex-md-row justify-content-start align-items-center text-center text-md-start">
                 <div>
                     <img src="images/WEBSITE SSFI (1).jpg" width="100%" height="100%">
                 </div>
-                <!--<div class="mb-3 mb-md-0 text-center">-->
-                <!--    <a href="index.php">-->
-                <!--        <img class="logo-main" src="images/ssfi-logo-12.png" width="50%" height="50%" alt="">-->
-                <!--        <img class="logo-scroll" src="images/ssfi-logo-12.png" width="50%" height="50%" alt="">-->
-                <!--        <img class="logo-mobile" src="images/ssfi-logo-12.png" width="50%" height="50%" alt="">-->
-                <!--    </a>-->
-                <!--</div>-->
-                
-                <!--<div class="text-center">-->
-                <!--    <p style="color: crimson; font-size: 20px; margin-bottom: 6px;">Speed Skating Federation of India</p>-->
-                <!--    <p style="color: #2f3080; font-size: 15px; margin-bottom: 2px;">स्पीड स्केटिंग फेडरेशन ऑफ इंडिया</p>-->
-                <!--    <p style="color: #2f3080; font-size: 10px; margin-bottom: 2px;">RECOGNISED BY GOVERNMENT OF INDIA & IOA</p>-->
-                <!--    <p style="color: #2f3080; font-size: 10px; margin-bottom: 2px;">P 12 Porkudil Nagar, Podumbhu - 625018, Madurai, Tamilnadu.</p>-->
-                <!--</div>-->
-                
-                <!--<div class="text-center">-->
-                <!--    <a href="index.php">-->
-                <!--        <img class="logo-main" src="images/new_header.png" width="100%" height="100%" alt="">-->
-                <!--        <img class="logo-scroll" src="images/new_header.png" width="100%" height="100%" alt="">-->
-                <!--        <img class="logo-mobile" src="images/new_header.png" width="100%" height="100%" alt="">-->
-                <!--    </a>-->
-                <!--</div>-->
             </div>
         </div>
         
-        <div class="container" style="background-color:white">
+        <div class="container" id="navbar_header" style="background-color:white">
             <div class="row">
                 <div class="col-md-12">
                     <div class="de-flex sm-pt10">
