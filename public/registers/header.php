@@ -21,6 +21,7 @@
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+        <link rel="stylesheet" href="../css/modern_home.css" />
         <style type='text/css'>
             table {
             border-collapse: collapse;
@@ -42,6 +43,29 @@
             .nd2-card {
                 box-shadow: none;
             }
+
+            /* Custom Header for Registration */
+            .reg-header-nav {
+                background: #001f3f !important; /* Navy Blue */
+                padding: 15px 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            }
+            .reg-header-nav a {
+                color: #FFD700 !important; /* Gold */
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 14px;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+            .reg-header-nav a:hover {
+                color: white !important;
+            }
         </style>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
@@ -57,11 +81,19 @@
     </head>
     <body>
         <div data-role="page" id="entrypage" data-url="entrypage">
+            
+            <!-- New Consistent Header -->
+            <div class="reg-header-nav">
+                <a href="../index.php"><i class="fa fa-home"></i> Back to Home</a>
+                <span style="color:white; font-weight:bold;">SSFI REGISTRATION</span>
+                <a href="../events/event-registration.php">Event List <i class="fa fa-list"></i></a>
+            </div>
+
             <div data-role="header" style="overflow:hidden; text-align:center;">
                 <br>
                 <center>
                  <div>
-                     <img src="image/WEBSITE SSFI (1).jpg" alt="image" width="80%" >
+                     <img src="image/WEBSITE SSFI (1).jpg" alt="image" width="80%" style="border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
                  </div>
                     </table>
                 </center>

@@ -50,70 +50,85 @@
     </div>
 </section>
 
-<!-- Quick Action Cards -->
+<!-- Event Selection Section (New) -->
 <section class="section-premium" id="registrations">
     <div class="container">
         <div class="section-title">
-            <h2>Join the Federation</h2>
-            <p>Select your category to get started with SSFI</p>
+            <h2>Select Your <span style="color:var(--accent-gold);">Registration</span> Type</h2>
+            <p>Choose the appropriate category to proceed</p>
         </div>
-        <div class="row g-4">
-            <!-- Skater Registration -->
-            <div class="col-lg-3 col-md-6">
-                <div class="service-card">
-                    <div class="card-img-wrapper">
-                        <img src="images/skater-1.png" alt="Skater Registration">
+        
+        <!-- Registration Cards -->
+        <div class="row g-4 justify-content-center mb-5">
+             <!-- Skater Registration -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card text-center p-4">
+                    <div class="mb-3">
+                        <img src="images/skater-1.png" alt="Skater" style="height: 100px;">
                     </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Skater Registration</h3>
-                        <p class="card-desc">Annual registration for athletes to participate in all official championships.</p>
-                        <a href="registers/skater-2526.php" class="btn-premium small" style="padding: 10px 25px; font-size: 0.8rem;">Register</a>
-                    </div>
+                    <h3>Skater Registration</h3>
+                    <p class="text-muted">Annual registration for athletes.</p>
+                    <a href="registers/skater-2526.php" class="btn-premium" style="width: 100%;">Register Now</a>
                 </div>
             </div>
             
              <!-- Club Registration -->
-            <div class="col-lg-3 col-md-6">
-                <div class="service-card">
-                    <div class="card-img-wrapper">
-                        <img src="images/coach.png" alt="Club Registration">
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card text-center p-4">
+                    <div class="mb-3">
+                        <img src="images/coach.png" alt="Club" style="height: 100px;">
                     </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Club Registration</h3>
-                        <p class="card-desc">Affiliate your club with SSFI to get recognition and training support.</p>
-                        <a href="registers/club-2526.php" class="btn-premium small" style="padding: 10px 25px; font-size: 0.8rem;">Affiliate</a>
-                    </div>
+                    <h3>Club Registration</h3>
+                    <p class="text-muted">Affiliate your club with SSFI.</p>
+                    <a href="registers/club-2526.php" class="btn-premium" style="width: 100%;">Affiliate Club</a>
                 </div>
             </div>
-
-            <!-- State Association -->
-            <div class="col-lg-3 col-md-6">
-                 <div class="service-card">
-                    <div class="card-img-wrapper">
-                        <img src="images/team/1.webp" alt="State Association">
+            
+             <!-- State Association -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card text-center p-4">
+                    <div class="mb-3">
+                        <img src="images/team/1.webp" alt="State" style="height: 100px; border-radius: 50%;">
                     </div>
-                    <div class="card-content">
-                        <h3 class="card-title">State Association</h3>
-                        <p class="card-desc">Login or registration for State and UT units.</p>
-                        <a href="registers/s-secretary.php" class="btn-premium small" style="padding: 10px 25px; font-size: 0.8rem;">Login / Join</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Events -->
-            <div class="col-lg-3 col-md-6">
-                 <div class="service-card">
-                    <div class="card-img-wrapper">
-                        <img src="images/registration.png" alt="Events">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Event Registration</h3>
-                        <p class="card-desc">Register for upcoming District, State, and National events.</p>
-                        <a href="events/event-registration.php" class="btn-premium small" style="padding: 10px 25px; font-size: 0.8rem;">Explore</a>
-                    </div>
+                    <h3>State / District Unit</h3>
+                    <p class="text-muted">Login for State/UT/District units.</p>
+                    <a href="registers/s-secretary.php" class="btn-premium" style="width: 100%;">Login / Join</a>
                 </div>
             </div>
         </div>
+
+        <!-- Event Types Selection (District/State/National) -->
+        <div class="row justify-content-center">
+            <div class="col-12 text-center mb-4">
+                <h3 style="color:var(--primary-navy); font-weight:700;">Event Registration</h3>
+                <p>Select the level of championship you wish to enter</p>
+            </div>
+            
+            <div class="col-lg-4 mb-3">
+                <a href="events/district_event.php" class="d-block text-decoration-none">
+                    <div class="card p-4 text-center text-white h-100" style="background: linear-gradient(135deg, #28a745, #218838); border-radius: 20px; transition: transform 0.3s;">
+                        <h4 class="m-0">District Event Registration</h4>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-lg-4 mb-3">
+                <a href="events/state_event_type.php" class="d-block text-decoration-none">
+                    <div class="card p-4 text-center text-white h-100" style="background: linear-gradient(135deg, #28a745, #218838); border-radius: 20px; transition: transform 0.3s;">
+                        <h4 class="m-0">State Event Registration</h4>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-lg-4 mb-3">
+                <a href="events/national_event_type.php" class="d-block text-decoration-none">
+                    <div class="card p-4 text-center text-white h-100" style="background: linear-gradient(135deg, #28a745, #218838); border-radius: 20px; transition: transform 0.3s;">
+                        <h4 class="m-0">National Event Registration</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
     </div>
 </section>
 
