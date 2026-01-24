@@ -104,30 +104,33 @@
                 <p>Select the level of championship you wish to enter</p>
             </div>
             
-            <div class="col-lg-4 mb-3">
-                <a href="events/district_event.php" class="d-block text-decoration-none">
-                    <div class="card p-4 text-center text-white h-100" style="background: linear-gradient(135deg, #28a745, #218838); border-radius: 20px; transition: transform 0.3s;">
-                        <h4 class="m-0">District Event Registration</h4>
-                    </div>
+            <div class="col-lg-4 mb-4">
+                <a href="events/district_event.php" class="event-choice-card">
+                    <i class="fa fa-map-marker"></i>
+                    <h4>District Event</h4>
+                    <p>Register for District Level Championships</p>
                 </a>
             </div>
             
-            <div class="col-lg-4 mb-3">
-                <a href="events/state_event_type.php" class="d-block text-decoration-none">
-                    <div class="card p-4 text-center text-white h-100" style="background: linear-gradient(135deg, #28a745, #218838); border-radius: 20px; transition: transform 0.3s;">
-                        <h4 class="m-0">State Event Registration</h4>
-                    </div>
+            <div class="col-lg-4 mb-4">
+                <a href="events/state_event_type.php" class="event-choice-card">
+                    <i class="fa fa-building"></i>
+                    <h4>State Event</h4>
+                    <p>Register for State Level Championships</p>
                 </a>
             </div>
             
-            <div class="col-lg-4 mb-3">
-                <a href="events/national_event_type.php" class="d-block text-decoration-none">
-                    <div class="card p-4 text-center text-white h-100" style="background: linear-gradient(135deg, #28a745, #218838); border-radius: 20px; transition: transform 0.3s;">
-                        <h4 class="m-0">National Event Registration</h4>
-                    </div>
+            <div class="col-lg-4 mb-4">
+                <a href="events/national_event_type.php" class="event-choice-card">
+                    <i class="fa fa-flag"></i>
+                    <h4>National Event</h4>
+                    <p>Register for National Level Championships</p>
                 </a>
             </div>
         </div>
+        
+    </div>
+</section>
         
     </div>
 </section>
