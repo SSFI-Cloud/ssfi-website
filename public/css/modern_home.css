@@ -984,3 +984,19 @@ header .container {
     margin-top: 10px;
     font-size: 0.9rem;
 }
+
+/* ===============================================
+   CRITICAL FIX: MEGA MENU STUCK OPEN
+   =============================================== */
+#mainmenu li .mega-menu-area {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    top: 120% !important; /* Move it down slightly when hidden */
+    transition: all 0.3s ease !important;
+}
+
+#mainmenu li:hover .mega-menu-area {
+    opacity: 1 !important;
+    visibility: visible !important;
+    top: 100% !important;
+}
