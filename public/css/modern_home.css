@@ -1044,3 +1044,36 @@ header .container {
 .hero-content {
     padding-top: 50px !important;
 }
+
+/* ===============================================
+   MOBILE MENU CRITICAL FIXES
+   =============================================== */
+@media (max-width: 991px) {
+    /* Reset Navbar Shape to allow expansion */
+    #navbar_header {
+        border-radius: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        width: 100% !important;
+        padding: 10px 15px !important;
+        overflow: visible !important;
+        height: auto !important;
+    }
+
+    /* Ensure Menu is Visible and on Top */
+    #mainmenu {
+        background: white !important;
+        position: relative !important;
+        z-index: 9999 !important;
+    }
+
+    /* Fix Text Colors */
+    #mainmenu a {
+        color: #001f3f !important; /* Navy Blue */
+    }
+
+    /* Fix Cropping issues */
+    header, header .container {
+        overflow: visible !important;
+    }
+}
